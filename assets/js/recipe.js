@@ -7,7 +7,7 @@ $(document).ready(function () {
                 "recipes": [
                     {
                         "name": "Vegan Salad Bowl",
-                        "video_url": "https://youtu.be/ViwGpHRSVyE?si=If4coZyDVebwjMg7",
+                        "video_url": "https://www.youtube.com/embed/ViwGpHRSVyE?si=451Gjl71K5Y3o1QV" ,
                         "description": "A refreshing salad bowl packed with nutrients and flavor. This vegan salad is perfect for a light and healthy meal.",
                         "ingredients": [
                             "Mixed greens 50 grams",
@@ -23,7 +23,7 @@ $(document).ready(function () {
                     ,
                     {
                         "name": "Vegan Lentil Curry",
-                        "video_url": "https://youtu.be/0LrXnxhH5I0?si=_H5Ui8o1Ac84vJEA",
+                        "video_url": "https://www.youtube.com/embed/0LrXnxhH5I0?si=d1Wg2xAr8p6ntcq7",
                         "description": "Hearty and comforting lentil curry, perfect for a cozy meal. This vegan curry is rich in protein and spices.",
                         "ingredients": [
                             "Red lentils 50 grams",
@@ -131,7 +131,7 @@ $(document).ready(function () {
                 "recipes": [
                     {
                         "name": "Chicken Tikka Masala",
-                        "video_url": "https://youtu.be/BOKdsepCrbc?si=hcAt167q9gihrB0m",
+                        "video_url": "https://www.youtube.com/embed/BOKdsepCrbc?si=6vSdnxaWiwaepaRz",
                         "description": "Creamy and spicy chicken curry, a classic favorite. This dish is perfect served with rice or naan bread.",
                         "ingredients": [
                             "Chicken thighs 50 grams",
