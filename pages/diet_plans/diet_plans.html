@@ -4,10 +4,12 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>courses</title>
+   <title>Diet plans</title>
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="../../assets/css/style2.css">
@@ -19,7 +21,7 @@
    
       <section class="flex">
    
-         <a href="../../pages/home/home.html" class="logo">Diet recommender</a>
+         <a href="../../index.php" class="logo">Diet recommender</a>
    
          <form action="search.html" method="post" class="search-form">
             <input type="text" name="search_box" required placeholder="search diet plans..." maxlength="100">
@@ -34,10 +36,11 @@
          </div>
    
          <div class="profile">
-            <img src="../../assets/images/images(mine)/woman single smiling logo.jpg" class="image" alt="">
-            <h3 class="name">Lahar Gupta</h3>
+            <img src="../../assets/images/profile.jpg" class="image" alt="">
+            <h3 class="name">Profile Name</h3>
             <p class="role">user</p>
             <a href="../profile/profile.html" class="btn">view profile</a>
+
          </div>
    
       </section>
@@ -51,17 +54,20 @@
       </div>
    
       <div class="profile">
-         <img src="../../assets/images/images(mine)/woman single smiling logo.jpg" class="image" alt="">
-         <h3 class="name">Lahar Gupta</h3>
+         <img src="../../assets/images/profile.jpg" class="image" alt="">
+         <h3 class="name">Profile Name</h3>
          <p class="role">user</p>
          <a href="../profile/profile.html" class="btn">view profile</a>
       </div>
    
       <nav class="navbar">
          <a href="../home/home.html"><i class="fas fa-home"></i><span>Home</span></a>
-         <a href="../diet_plans/diet_plans.html"><i class="fas fa-graduation-cap"></i><span>Personalized Diet Plans</span></a>
+         <!-- <a href="http://localhost:8503/"><i class="fa-solid fa-robot"></i><span>ChatBot</span></a> -->
+         <a href="../diet_plans/diet_plans.html"><i class="fas fa-graduation-cap"></i><span>Personalized Diet plans</span></a>
+         <!-- <a href="testpaper.html"><i class="fa-regular fa-clipboard"></i><span>Test Papers</span></a> -->
+         <!-- <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>Teachers</span></a> -->
          <a href="../contact/contact.html"><i class="fas fa-headset"></i><span>Contact us</span></a>
-         <a href="../contact/contact.html"><i class="fas fa-question"></i><span>About</span></a>
+         <a href="../about/about.html"><i class="fas fa-question"></i><span>About</span></a>
       </nav>
    
    </div>
@@ -71,11 +77,33 @@
    <h1 class="heading">Our Diet plans</h1>
 
    <div class="box-container">
+      <div class = "filter-container">
+         <div class = "category-head">
+            <ul>
+                <div class = "category-title active" id = "all">
+                    <li>Monthly</li>
+                    <span><i class = "fas fa-border-all"></i></span>
+                </div>
+                <div class = "category-title" id = "culture">
+                    <li>Weekly</li>
+                    <span><i class = "fas fa-theater-masks"></i></span>
+                </div>
+                <div class = "category-title" id = "politics">
+                    <li>Daily</li>
+                    <span><i class = "fas fa-landmark"></i></span>
+                </div>
+               
+            </ul>
+        </div>
+         
+        <div class = "all business"> 
 
-      <div class="box">
+      <div class="box" >
          <div class="tutor">
-            <img src="../../assets/images/images(food)/logo.jpg" alt="">
+            
+            <img src="../../assets/images/images(food)/logo.jpg"  alt="">
             <div class="info">
+               
                <h3>3 weeks</h3>
                <span>21-10-2021</span>
             </div>
@@ -83,11 +111,14 @@
          <div class="thumb">
             <img src="../../assets/images/images(food)/ketologo.jpg" alt="">
             <span>plant based </span>
-         </div>
-         <h3 class="title">Keto Diet</h3>
+            <h3 class="title">Keto Diet</h3>
          <a href="watch-video.html" class="inline-btn">More info</a>
+         </div>
+         
+      </div>
       </div>
 
+      <div class = "all business">
       <div class="box">
          <div class="tutor">
             <img src="../../assets/images/images(mine)/w2.jpg">
@@ -103,7 +134,9 @@
          <h3 class="title">Paleo Diet</h3>
          <a href="playlist.html" class="inline-btn">More info</a>
       </div>
+</div>
 
+<div class = "all business">
       <div class="box">
          <div class="tutor">
             <img src="../../assets/images/images(mine)/profile logo of man.jpg" alt="">
@@ -119,7 +152,9 @@
          <h3 class="title">South beach Diet</h3>
          <a href="playlist.html" class="inline-btn">More info</a>
       </div>
+      </div>
 
+      <div class = "all business">
       <div class="box">
          <div class="tutor">
             <img src="../../assets/images/images(mine)/w3.png" alt="">
@@ -135,7 +170,10 @@
          <h3 class="title">Intermittent Fasting Diet</h3>
          <a href="playlist.html" class="inline-btn">More info</a>
       </div>
+      </div>
 
+      <!-- Now we will se another category   ............................................................................-->
+      <div class = "all culture">
       <div class="box">
          <div class="tutor">
             <img src="../../assets/images/images(mine)/w4.png">
@@ -151,7 +189,10 @@
          <h3 class="title">Vegan Diet</h3>
          <a href="playlist.html" class="inline-btn">More info</a>
       </div>
+      </div>
 
+
+      <div class = "all culture">
       <div class="box">
          <div class="tutor">
             <img src="../../assets/images/images(mine)/w5.png" alt="">
@@ -167,7 +208,9 @@
          <h3 class="title">Liquid based diet</h3>
          <a href="playlist.html" class="inline-btn">More info</a>
       </div>
+      </div>
 
+      <div class = "all culture">
       <div class="box">
          <div class="tutor">
             <img src="../../assets/images/images(mine)/young man logo smiling.jpg" alt="">
@@ -183,7 +226,10 @@
          <h3 class="title">Meat based diet</h3>
          <a href="playlist.html" class="inline-btn">More info</a>
       </div>
+      </div>
 
+
+<div class = "all politics">
       <div class="box">
          <div class="tutor">
             <img src="../../assets/images/images(mine)/single man logo.jpg" alt="">
@@ -199,7 +245,9 @@
          <h3 class="title">Weight watchers</h3>
          <a href="playlist.html" class="inline-btn">More info</a>
       </div>
+      </div>
 
+      <div class = "all politics">
       <div class="box">
          <div class="tutor">
             <img src="../../assets/images/images(mine)/specks logo.png" alt="">
@@ -215,6 +263,9 @@
          <h3 class="title">DASH diet</h3>
          <a href="playlist.html" class="inline-btn">More info</a>
       </div>
+      </div>
+
+   </div>
 
    </div>
 
@@ -235,7 +286,7 @@
 
 <footer class="footer">
 
-   &copy; copyright @ 2024 by <span>Wizchat founders</span> | all rights reserved!
+   &copy; copyright @ 2024 by <span>Our hack team</span> | all rights reserved!
    <button class="chatbot-toggler">
       <span class="fa-regular fa-message fa-2x"></span>
       <span class="fa-regular fa-circle-xmark fa-2x"></span>
@@ -260,8 +311,35 @@
 </footer>
 
 <!-- custom js file link  -->
-<script src="../../assets/js/script.js"></script>
+<script src="js/script.js"></script>
+<script>
+   $(document).ready(function () {
+      // Function to fetch and update profile data
+      function fetchProfileData() {
+         $.ajax({
+            url: '../profile/get_profile_data.php', // PHP script to fetch data
+            type: 'GET',
+            dataType: 'json',
+            success: function (data) {
+               if (data) {
+                  // Update profile fields dynamically
+                  $('.name').text(data.name);
+                  
+               } else {
+                  console.log('No profile data found.');
+               }
+            },
+            error: function (xhr, status, error) {
+               console.error('Error fetching profile data:', error);
+            }
+         });
+      }
 
+      // Call fetchProfileData function on page load
+      fetchProfileData();
+   });
+
+</script>
    
 </body>
 </html>

@@ -11,6 +11,7 @@
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="../../assets/css/style2.css">
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -34,7 +35,7 @@
          </div>
    
          <div class="profile">
-            <img src="../../assets/images/images(mine)/woman single smiling logo.jpg" class="image" alt="">
+            <img src="../../assets/images/profile.jpg" class="image" alt="">
             <h3 class="name">Lahar Gupta</h3>
             <p class="role">User</p>
             <a href="../profile/profile.html" class="btn">view profile</a>
@@ -53,7 +54,7 @@
       </div>
    
       <div class="profile">
-         <img src="../../assets/images/images(mine)/woman single smiling logo.jpg" class="image" alt="">
+         <img src="../../assets/images/profile.jpg" class="image" alt="">
          <h3 class="name">Lahar Gupta</h3>
          <p class="role">user</p>
          <a href="../profile/profile.html" class="btn">view profile</a>
@@ -279,6 +280,34 @@
 
 <!-- custom js file link  -->
 <script src="../../assets/js/script.js"></script>
+<script>
+   $(document).ready(function () {
+      // Function to fetch and update profile data
+      function fetchProfileData() {
+         $.ajax({
+            url: '../profile/get_profile_data.php', // PHP script to fetch data
+            type: 'GET',
+            dataType: 'json',
+            success: function (data) {
+               if (data) {
+                  // Update profile fields dynamically
+                  $('.name').text(data.name);
+                  
+               } else {
+                  console.log('No profile data found.');
+               }
+            },
+            error: function (xhr, status, error) {
+               console.error('Error fetching profile data:', error);
+            }
+         });
+      }
+
+      // Call fetchProfileData function on page load
+      fetchProfileData();
+   });
+
+</script>
 
    
 </body>
