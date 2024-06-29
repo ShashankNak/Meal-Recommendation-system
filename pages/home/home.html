@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>home</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="../../assets/css/style2.css">
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+   <header class="header">
+
+      <section class="flex">
+
+         <a href="home.html" class="logo">Diet recommender system</a>
+
+         <form action="search.html" method="post" class="search-form">
+            <input type="text" name="search_box" required placeholder="search diet plans ..." maxlength="100">
+            <button type="submit" class="fas fa-search"></button>
+         </form>
+
+         <div class="icons">
+            <div id="menu-btn" class="fa-solid fa-arrow-left" ></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="user-btn" class="fas fa-user"></div>
+            <div id="toggle-btn" class="fa-regular fa-lightbulb"></div>
+         </div>
+
+         <div class="profile">
+            <img src="../../assets/images/profile.jpg" class="image" alt="">
+            <h3 class="name">Profile Image</h3>
+            <p class="role">User</p>
+            <a href="../profile/profile.html" class="btn">view profile</a>
+            
+         </div>
+
+      </section>
+
+   </header>
+
+   <div class="side-bar">
+
+      <div id="close-btn">
+         <i class="fas fa-times"></i>
+      </div>
+
+      <div class="profile">
+         <img src="../../assets/images/profile.jpg" class="image" alt="">
+         <h3 class="name">Lahar Gupta</h3>
+         <p class="role">student</p>
+         <a href="../profile/profile.html" class="btn">view profile</a>
+      </div>
+
+      <nav class="navbar">
+         <a href="#"><i class="fas fa-home"></i><span>Home</span></a>
+         <!-- <a href="http://localhost:8503/"><i class="fa-solid fa-robot"></i><span>ChatBot</span></a> -->
+         <a href="../diet_plans/diet_plans.html"><i class="fas fa-graduation-cap"></i><span>Personalized Diet plans</span></a>
+         <!-- <a href="testpaper.html"><i class="fa-regular fa-clipboard"></i><span>Test Papers</span></a> -->
+         <!-- <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>Teachers</span></a> -->
+         <a href="../contact/contact.html"><i class="fas fa-headset"></i><span>Contact us</span></a>
+         <a href="../about/about.html"><i class="fas fa-question"></i><span>About</span></a>
+      </nav>
+
+   </div>
+
+   <section class="home-grid">
+
+      <h1 class="heading">Explore the Site</h1>
+
+      <div class="box-container">
+
+         <div class="box">
+
+            <img src="../../assets/images/images(food)/pexels-photo-1351238.jpeg"
+               style="background-size: contain;height: 250px;width: 250px;" alt="">
+         </div>
+
+         <div class="box">
+            <h3 class="title">Preferences</h3>
+            <div class="flex">
+               <a href="#"><i class="fa-solid fa-plus-minus"></i><span>Vegan</span></a>
+               <a href="#"><i class="fa-solid fa-wrench"></i><span>Pescatarian</span></a>
+               <a href="#"><i class="fa-solid fa-landmark-dome"></i><span>Halal</span></a>
+               <a href="#"><i class="fa-solid fa-subscript"></i><span>Lactose-Free</span></a>
+               <a href="#"><i class="fa-solid fa-earth-americas"></i><span>Gluten-Free</span></a>
+               <a href="#"><i class="fa-solid fa-dna"></i><span>Kosher</span></a>
+               <!-- <a href="#"><i class="fas fa-cog"></i><span>software</span></a> -->
+               <a href="#"><i class="fas fa-vial"></i><span>Vegetarian</span></a>
+            </div>
+         </div>
+
+         <div class="box">
+            <h3 class="title">popular diets</h3>
+            <div class="flex">
+               <a href="#"><i class="fa fa-cutlery" aria-hidden="true"></i><span>keto diet</span></a>
+               <a href="#"><i class="fa fa-coffee" aria-hidden="true"></i><span>Vegan diet</span></a>
+               <a href="#"><i class="fa-solid fa-tree"></i><span>Intermiddent fasting</span></a>
+               <a href="#"><i class="fa fa-leaf" aria-hidden="true"></i><span>Low carb</span></a>
+               <a href="#"><i class="fa-solid fa-gun"></i><span>Paleo Diet</span></a>
+               <a href="#"><i class="fa-solid fa-person-falling"></i><span>Atkins diet</span></a>
+            </div>
+         </div>
+
+      </div>
+
+   </section>
+
+   <footer class="footer">
+
+      &copy; copyright @ 2024 by <span>Our hack team</span> | all rights reserved!
+      <button class="chatbot-toggler">
+         <span class="fa-regular fa-message fa-2x"></span>
+         <span class="fa-regular fa-circle-xmark fa-2x"></span>
+      </button>
+      <div class="chatbot">
+         <header>
+            <h2>Chatbot</h2>
+            <span class="close-btn material-symbols-outlined">close</span>
+         </header>
+         <ul class="chatbox">
+            <li class="chat incoming">
+               <span class="fa-solid fa-robot"></span>
+               <p>Hi there 👋<br>How can I help you today?</p>
+            </li>
+         </ul>
+         <div class="chat-input">
+            <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+            <span id="send-btn" class="fa-solid fa-share"></span>
+         </div>
+      </div>
+
+   </footer>
+
+   <!-- custom js file link  -->
+   <script src="../../assets/js/script.js"></script>
+   <script>
+      $(document).ready(function () {
+         // Function to fetch and update profile data
+         function fetchProfileData() {
+            $.ajax({
+               url: '../profile/get_profile_data.php', // PHP script to fetch data
+               type: 'GET',
+               dataType: 'json',
+               success: function (data) {
+                  if (data) {
+                     // Update profile fields dynamically
+                     $('.name').text(data.name);
+                     
+                  } else {
+                     console.log('No profile data found.');
+                  }
+               },
+               error: function (xhr, status, error) {
+                  console.error('Error fetching profile data:', error);
+               }
+            });
+         }
+
+         // Call fetchProfileData function on page load
+         fetchProfileData();
+      });
+
+
+   </script>
+   
+
+</body>
+
+</html>
