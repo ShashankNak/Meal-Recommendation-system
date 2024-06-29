@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>courses</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+   <header class="header">
+   
+      <section class="flex">
+   
+         <a href="index.php" class="logo">Diet recommender</a>
+   
+         <form action="search.html" method="post" class="search-form">
+            <input type="text" name="search_box" required placeholder="search diet plans..." maxlength="100">
+            <button type="submit" class="fas fa-search"></button>
+         </form>
+   
+         <div class="icons">
+            <div id="menu-btn" class="fa-solid fa-arrow-left"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="user-btn" class="fas fa-user"></div>
+            <div id="toggle-btn" class="fa-regular fa-lightbulb"></div>
+         </div>
+   
+         <div class="profile">
+            <img src="images(mine)/woman single smiling logo.jpg" class="image" alt="">
+            <h3 class="name">Lahar Gupta</h3>
+            <p class="role">user</p>
+            <a href="profile.html" class="btn">view profile</a>
+            <!-- <div class="flex-btn">
+               <a href="login.html" class="option-btn">login</a>
+               <a href="register.html" class="option-btn">register</a>
+            </div> -->
+         </div>
+   
+      </section>
+   
+   </header>
+
+   <div class="side-bar">
+
+      <div id="close-btn">
+         <i class="fas fa-times"></i>
+      </div>
+   
+      <div class="profile">
+         <img src="images(mine)/woman single smiling logo.jpg" class="image" alt="">
+         <h3 class="name">Lahar Gupta</h3>
+         <p class="role">user</p>
+         <a href="profile.html" class="btn">view profile</a>
+      </div>
+   
+      <nav class="navbar">
+         <a href="home.html"><i class="fas fa-home"></i><span>Home</span></a>
+         <!-- <a href="http://localhost:8503/"><i class="fa-solid fa-robot"></i><span>ChatBot</span></a> -->
+         <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Diet Plans</span></a>
+         <!-- <a href="testpaper.html"><i class="fa-regular fa-clipboard"></i><span>Test Papers</span></a> -->
+         <!-- <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>Teachers</span></a> -->
+         <a href="contact.html"><i class="fas fa-headset"></i><span>Contact us</span></a>
+         <a href="about.html"><i class="fas fa-question"></i><span>About</span></a>
+      </nav>
+   
+   </div>
+
+<section class="courses">
+
+   <h1 class="heading">Our Diet plans</h1>
+
+<!-- ///////////////////////////////////////////////////////////////////////////////// -->
+
+ <!-- /////////////////////////////////////////////////////////////////// -->
+
+   <div class="box-container">
+      <div class = "filter-container">
+         <div class = "category-head">
+            <ul>
+                <div class = "category-title active" id = "all">
+                    <li>Monthly</li>
+                    <span><i class = "fas fa-border-all"></i></span>
+                </div>
+                <div class = "category-title" id = "culture">
+                    <li>Weekly</li>
+                    <span><i class = "fas fa-theater-masks"></i></span>
+                </div>
+                <div class = "category-title" id = "politics">
+                    <li>Daily</li>
+                    <span><i class = "fas fa-landmark"></i></span>
+                </div>
+               
+            </ul>
+        </div>
+         
+        <div class = "all business"> 
+
+      <div class="box" >
+         <div class="tutor">
+            
+            <img src="images(food)/logo.jpg"  alt="">
+            <div class="info">
+               
+               <h3>3 weeks</h3>
+               <span>21-10-2021</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <img src="images(food)/ketologo.jpg" alt="">
+            <span>plant based </span>
+            <h3 class="title">Keto Diet</h3>
+         <a href="watch-video.html" class="inline-btn">More info</a>
+         </div>
+         
+      </div>
+      </div>
+
+      <div class = "all business">
+      <div class="box">
+         <div class="tutor">
+            <img src="images(mine)/w2.jpg">
+            <div class="info">
+               <h3>3 weeks</h3>
+               <span>21-10-2022</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <img src="images(food)/vegan.jpg" alt="">
+            <span>nut based</span>
+         </div>
+         <h3 class="title">Paleo Diet</h3>
+         <a href="playlist.html" class="inline-btn">More info</a>
+      </div>
+</div>
+
+<div class = "all business">
+      <div class="box">
+         <div class="tutor">
+            <img src="images(mine)/profile logo of man.jpg" alt="">
+            <div class="info">
+               <h3>3 weeks</h3>
+               <span>21-10-2023</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <img src="images(food)/southbeach.jpg" alt="">
+            <span>low carbs</span>
+         </div>
+         <h3 class="title">South beach Diet</h3>
+         <a href="playlist.html" class="inline-btn">More info</a>
+      </div>
+      </div>
+
+      <div class = "all business">
+      <div class="box">
+         <div class="tutor">
+            <img src="images(mine)/w3.png" alt="">
+            <div class="info">
+               <h3>4 weeks</h3>
+               <span>18-11-2022</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <img src="images(food)/food1.jpg" alt="">
+            <span>high protein</span>
+         </div>
+         <h3 class="title">Intermittent Fasting Diet</h3>
+         <a href="playlist.html" class="inline-btn">More info</a>
+      </div>
+      </div>
+
+      <!-- Now we will se another category   ............................................................................-->
+      <div class = "all culture">
+      <div class="box">
+         <div class="tutor">
+            <img src="images(mine)/w4.png"">
+            <div class="info">
+               <h3>3 weeks</h3>
+               <span>14-05-2022</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <img src="images(food)/food2.jpg" alt="">
+            <span>plant based</span>
+         </div>
+         <h3 class="title">Vegan Diet</h3>
+         <a href="playlist.html" class="inline-btn">More info</a>
+      </div>
+      </div>
+
+
+      <div class = "all culture">
+      <div class="box">
+         <div class="tutor">
+            <img src="images(mine)/w5.png" alt="">
+            <div class="info">
+               <h3>4 weeks</h3>
+               <span>08-09-2021</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <img src="images(food)/liquid.jpg" alt="">
+            <span>plant based</span>
+         </div>
+         <h3 class="title">Liquid based diet</h3>
+         <a href="playlist.html" class="inline-btn">More info</a>
+      </div>
+      </div>
+
+      <div class = "all culture">
+      <div class="box">
+         <div class="tutor">
+            <img src="images(mine)/young man logo smiling.jpg" alt="">
+            <div class="info">
+               <h3>5 weeks</h3>
+               <span>17-10-2020</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <img src="images(food)/fruits.jpg" alt="">
+            <span>plant based</span>
+         </div>
+         <h3 class="title">Meat based diet</h3>
+         <a href="playlist.html" class="inline-btn">More info</a>
+      </div>
+      </div>
+
+
+<div class = "all politics">
+      <div class="box">
+         <div class="tutor">
+            <img src="images(mine)/single man logo.jpg" alt="">
+            <div class="info">
+               <h3>3 weeks</h3>
+               <span>01-04-2020</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <img src="images(food)/food3.jpg" alt="">
+            <span>plant based</span>
+         </div>
+         <h3 class="title">Weight watchers</h3>
+         <a href="playlist.html" class="inline-btn">More info</a>
+      </div>
+      </div>
+
+      <div class = "all politics">
+      <div class="box">
+         <div class="tutor">
+            <img src="images(mine)/specks logo.png" alt="">
+            <div class="info">
+               <h3>4 weeks</h3>
+               <span>05-12-2020</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <img src="images(food)/food4.jpg" alt="">
+            <span>plant based</span>
+         </div>
+         <h3 class="title">DASH diet</h3>
+         <a href="playlist.html" class="inline-btn">More info</a>
+      </div>
+      </div>
+
+   </div>
+
+   </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+
+   &copy; copyright @ 2024 by <span>Our hack team</span> | all rights reserved!
+   <button class="chatbot-toggler">
+      <span class="fa-regular fa-message fa-2x"></span>
+      <span class="fa-regular fa-circle-xmark fa-2x"></span>
+    </button>
+    <div class="chatbot">
+      <header>
+        <h2>Chatbot</h2>
+        <span class="close-btn material-symbols-outlined">close</span>
+      </header>
+      <ul class="chatbox">
+        <li class="chat incoming">
+          <span class="fa-solid fa-robot"></span>
+          <p>Hi there 👋<br>How can I help you today?</p>
+        </li>
+      </ul>
+      <div class="chat-input">
+        <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+        <span id="send-btn" class="fa-solid fa-share"></span>
+      </div>
+    </div>
+
+</footer>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+   
+</body>
+</html>
